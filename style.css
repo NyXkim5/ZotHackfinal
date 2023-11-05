@@ -1,0 +1,101 @@
+/* CSS */
+.button-17 {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  input[type=text] {
+	appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: .2em solid #367fdf;
+	background: #3573d033;
+	border-radius: .2em .2em 0 0;
+	padding: .4em;
+	color: #4c7ad5;
+    font-size: 1.3em;
+  }
+ .blue-btn{
+    border: 3px solid #367fdf; 
+    padding: 16px 32px;
+    border-radius: 100px;
+    background-color: white;
+    color:#367fdf;
+    transition: background-color 350ms, color 350ms;
+    width: max-content;
+    text-transform: uppercase;
+    font-size: 1.2em;
+
+ }
+ .blue-btn:hover {
+    background-color: #367fdf; 
+    color:rgb(72, 134, 214);
+ }
+
+  .results-image{
+    /* width:200px; */
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 4px;
+    overflow: hidden;
+}
+  #display {
+    display: grid;
+    grid-auto-flow: column;
+    width: 70vw;
+    gap: 40px;
+    margin: 0 auto;
+  }
+   
+.card-container {
+    border-radius: 4px;
+    box-shadow: 0 0 2px 0px #367fdf;
+    padding: 20px;
+    display: grid;
+    place-content:start center ;
+    text-align: center;
+}
+
+.card-container h1 {
+    font-size: 1.2em;
+}
+
+.scrollable {
+    border: 1px solid blue;
+    overflow-x: scroll;
+    width: 35vw;
+    display: grid;
+    place-content: center start;
+    height: 35vh;
+    padding: 20px;
+}
