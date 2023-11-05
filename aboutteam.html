@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+    <style>
+        body {
+          background-image: url('petr.png');
+        }
+</style> 
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@900&family=Nunito&display=swap" rel="stylesheet">
+    <script src="./script.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .comic-text {
+            /* font-family: 'Comic Sans MS', cursive, sans-serif; */
+            /* Use Comic Sans MS font */
+            font-size: 20px;
+            /* Large text */
+            color: gray;
+            /* Default text color */
+            text-align: left;
+            /* Center the text */
+            margin-top: 40px;
+            /* Add some space at the top */
+            grid-column: 1/4;
+        }
+        .comic-text h2 {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 800;
+        }
+        .comic-text h1 {
+            font-family: 'Kanit', sans-serif;
+            color: black;
+            font-size: 8em;
+            margin: 0;
+            line-height: 0.8em;
+        }
+
+        .header {
+            background-color: #2f52ea;
+            /* Navy blue */
+            color: white;
+            padding: 40px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 40px;
+        }
+
+        .header-logo {
+
+            display: flex;
+            align-items: center;
+        }
+
+        .header-logo img {
+            /* Assuming we have a logo image, you'd define its size here */
+            height: 50px;
+            /* or whatever size fits your needs */
+        }
+
+        .header-logo span {
+            margin-left: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            padding: 0 15px;
+        }
+
+        .nav-links li a {
+            color: rgb(21, 64, 174);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links li a:hover {
+            text-decoration: underline;
+        }
+
+        .login-button {
+            background-color: #FFFFFF;
+            border: none;
+            border-radius: 30px;
+            padding: 20px 30px;
+            cursor: pointer;
+            color: #000080;
+            /* Navy blue */
+            font-weight: bold;
+        }
+
+        .form-bottom-aligned {
+            display: grid;
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+
+            /* grid-template-rows: auto auto auto auto auto auto; */
+            grid-template-rows: repeat(8, max-content);
+            gap: 16px;
+            max-width: 400px;
+        }
+
+        .form-bottom-aligned > label {
+            text-transform: uppercase;
+            color: gray;
+            font-weight: bold;
+        }
+
+        /* Style for the form itself */
+        .form-style {
+            margin-bottom: 20px;
+            /* Add some space from the bottom of the viewport */
+        }
+
+        /* Additional style to ensure line breaks before the button */
+        br {
+            flex-basis: 100%;
+            height: 0;
+        }
+
+        button {
+            margin-top: 10px;
+            /* Add some space above the button */
+        }
+
+        /* Here we use a simple selector for the cart icon,
+           but in a real project, you might have a class or ID for styling it */
+        .login-button img {
+            /* Define the size of your shopping cart icon */
+            width: 24px;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header-logo">
+            <img src="zotlogo.jpg" alt="Logo">
+            <span>ZOT N Munch</span>
+        </div>
+        <ul class="nav-links">
+
+            <li><a href="index.html" class="button-17">Home</a></li>
+            <li><a href="aboutteam.html" class="button-17">The Team</a></li>
+            <li><a href="aboutus.html" class="button-17">About</a></li>
+            
+        </ul>
+
+    </div>
+
+   
+
+<!-- <img src="Screenshot 2023-11-04 at 4.18.15 PM.png" width="350" height="100" /> -->
+
+
+
+    
+
+    
+    
+    <center>
+        <h1>About the Team!</h1> 
+    </center>
+   
+    <body>
+        <center>
+
+            <font size="-0.5">
+                <div class = "name" >Nathan Kim</div>
+            </font>
+            <img src="nathan.jpeg" width = 200px height = 200px border="1" />
+            <div>First Year</div>
+            <div>Major: Computer Engineering</div>
+            <div>Role: Hacker</div>
+            <div>Favorite Food: Korean BBQ</div>
+            <div>Email: joonhynk@uci.edu</div>
+        </center>
+    </body>
+    
+    <label>
+        <center class = "space">
+            <div class = "name">Shayla Ho</div>
+            <img src="shayla.jpg" width = 200px height = 200px border="1"/>
+            <div>Third Year</div>
+            <div>Major: Informatics</div>
+            <div>Role: Hacker</div>
+            <div>Favorite Food: Cookies</div>
+            <div>Email: shaylamh@uci.edu</div>
+        </center>
+    </label>    
+
+        <center class = "space">
+            <div class = "name">Lokesh Sharma</div>
+            <img src="lokesh.png" width = 200px height = 200px border="1"/>
+            <div>First Year</div>
+            <div>Major: Computer Science</div>
+            <div>Role: Hacker</div>
+            <div>Favorite Food: Cereal</div>
+            <div>Email: lokeshs1@uci.edu</div>
+        </center>
+        
+        <center class = "space">
+            <div class = "name">Alvaro Ventura</div>
+            <img src="alvaro.jpg" width = 200px height = 200px border="1"/>
+            <div>First Year</div>
+            <div>Major: Computer Science</div>
+            <div>Role: Hacker</div>
+            <div>Favorite Food: Aguachile</div>
+            <div>Email: alvarov2@uci.edu</div>
+        </center>
+        
+        <center class = "space">
+            <div class = "name">Ryan</div>
+            <img src="ryan.jpeg" width = 200px height = 200px border="1"/>
+            <div>Role: Mentor</div>
+            <div>Favorite Food: Placeholder</div>
+            <div>Email: ryanyg@uci.edu</div>
+        </center>
+
+    </body>

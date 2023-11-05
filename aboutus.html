@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@900&family=Nunito&display=swap" rel="stylesheet">
+    <script src="./script.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .comic-text {
+            /* font-family: 'Comic Sans MS', cursive, sans-serif; */
+            /* Use Comic Sans MS font */
+            font-size: 20px;
+            /* Large text */
+            color: gray;
+            /* Default text color */
+            text-align: left;
+            /* Center the text */
+            margin-top: 40px;
+            /* Add some space at the top */
+            grid-column: 1/4;
+        }
+        .comic-text h2 {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 800;
+        }
+        .comic-text h1 {
+            font-family: 'Kanit', sans-serif;
+            color: black;
+            font-size: 8em;
+            margin: 0;
+            line-height: 0.8em;
+        }
+
+        .header {
+            background-color: #2f52ea;
+            /* Navy blue */
+            color: white;
+            padding: 40px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 40px;
+        }
+
+        .header-logo {
+
+            display: flex;
+            align-items: center;
+        }
+
+        .header-logo img {
+            /* Assuming we have a logo image, you'd define its size here */
+            height: 50px;
+            /* or whatever size fits your needs */
+        }
+
+        .header-logo span {
+            margin-left: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            padding: 0 15px;
+        }
+
+        .nav-links li a {
+            color: rgb(21, 64, 174);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links li a:hover {
+            text-decoration: underline;
+        }
+
+        .login-button {
+            background-color: #FFFFFF;
+            border: none;
+            border-radius: 30px;
+            padding: 20px 30px;
+            cursor: pointer;
+            color: #000080;
+            /* Navy blue */
+            font-weight: bold;
+        }
+
+        .form-bottom-aligned {
+            display: grid;
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+
+            /* grid-template-rows: auto auto auto auto auto auto; */
+            grid-template-rows: repeat(8, max-content);
+            gap: 16px;
+            max-width: 400px;
+        }
+
+        .form-bottom-aligned > label {
+            text-transform: uppercase;
+            color: gray;
+            font-weight: bold;
+        }
+
+        /* Style for the form itself */
+        .form-style {
+            margin-bottom: 20px;
+            /* Add some space from the bottom of the viewport */
+        }
+
+        /* Additional style to ensure line breaks before the button */
+        br {
+            flex-basis: 100%;
+            height: 0;
+        }
+
+        button {
+            margin-top: 10px;
+            /* Add some space above the button */
+        }
+
+        /* Here we use a simple selector for the cart icon,
+           but in a real project, you might have a class or ID for styling it */
+        .login-button img {
+            /* Define the size of your shopping cart icon */
+            width: 24px;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header-logo">
+            <img src="zotlogo.jpg" alt="Logo">
+            <span>ZOT N Munch</span>
+        </div>
+        <ul class="nav-links">
+
+            <li><a href="index.html" class="button-17">Home</a></li>
+            <li><a href="./aboutteam.html" class="button-17">The Team</a></li>
+            <li><a href="aboutus.html" class="button-17">About</a></li>
+            
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
+
+<h1>Our Story </h1>
+
+
+<!--Centered Image Start-->
+<div style="text-align: center;">
+    <img width="300" height = "300" src="gatekeep.png">
+ </div>
+ <!--Centered Image End-->
+
+<h2>Have you ever been a victim of gatekeeping? </h2>
+<p> So have we. It sucks, doesn't it? Luckily for you, look no further! 
+    Meet Zot n' Munch, a website where users can upload image URLs of food and find resturaunts that serve that food.
+</p>
+
+<h2>How it Works</h2>
+<h3> Spoonacular API </h3>
+<p> In order to identify the food in the photo, we needed some type of machine learning to be able to
+    identify and classify the food. So we used Spoonacular API, a food API that provided a food recognition tool using machine learning. With this, we'll be able to determine the type of food presented in the image with just the image URL!
+    After calling the API, it will return the category that it thinks the food belongs to, along with a probability of it being right or not.
+</p>
+<h3> Yelp API </h3>
+<p> After receiving the results from Spoonacular, we needed to find a way to be able to search for resturaunts that served that particular food. 
+    So we decided to utilize the Yelp API by passing in the food category returned from Spoonacular and a location inputted by the user. If the user doesn't input a location, the default will be Irvine, CA. After that, our call will return a list of resturaunts that serve the food found in the image! 
+</p>
+
+<h3> How it All Comes Together </h3>
+<p> Finally, after combining our two functions into one that calls both, we were ready to link it to our front-end interface. When the user inputs an image URL, 
+    a list of resturaunts within the vicinity of the location they inputted (Irvine, if they didn't input a location) will appear for the user to browse through. 
+</p>
+
+<h3> Disclaimer! </h3>
+<p> Please be aware that the Spoonacular API is not 100% accurate, and may misidentify food. Hopefully in the future, we can continue to train the machine to better identify and categorize the presented food items.</p>
+
+</body>
+</html>
